@@ -9,6 +9,8 @@
         android:targetSdkVersion="16" />
         
     <uses-permission android:name="android.permission.INTERNET" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -33,6 +35,16 @@
             android:name="com.middleschool.sangha.bap.Bap"
             android:label="@string/title_activity_bap" >
         </activity>
+        
+        <receiver android:name="com.middleschool.sangha.bapautoupdate.BroadCast" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <service
+            android:name="com.middleschool.sangha.bapautoupdate.updateService"
+            android:label="자동 업데이트 서비스" />
     </application>
 
 </manifest>

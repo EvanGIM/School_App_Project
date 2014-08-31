@@ -20,38 +20,31 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.main);
         
         button1 = (Button) findViewById(R.id.button1);
-        button2 = (Button) findViewById(R.id.button2);
         button1.setOnClickListener(listener);
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(listener);
     }
     
         Button.OnClickListener listener = new Button.OnClickListener()
          {
           public void onClick(View v)
            {
-        	switch(v.getId()){
-       	    case R.id.button1:
-        	Toast.makeText(getApplicationContext(), "학교 홈페이지로 이동합니다.",
-        			Toast.LENGTH_LONG).show(); }
-        		
-        	switch(v.getId()){
-     	    case R.id.button1:
-      		    Intent myIntent = new Intent(MainActivity.this, Webview.class);
-        		startActivity(myIntent);
-        	break;
-        	}
-        	button2.setOnClickListener(listener);
-        	
-        	switch(v.getId()){
-     	    case R.id.button2:
-        	Toast.makeText(getApplicationContext(), "급식 엑티비티로 이동합니다.",
-        			Toast.LENGTH_LONG).show(); }
-        		
-        	switch(v.getId()){
-     	    case R.id.button2:
-      		    Intent myIntent = new Intent(MainActivity.this, com.middleschool.sangha.bap.Bap.class);
-        		startActivity(myIntent);
-        	break;
-        	}
+        	switch (v.getId()) {
+        	case R.id.button1:
+        	    Toast.makeText(getApplicationContext(), "학교 홈페이지로 이동합니다.",
+        	        Toast.LENGTH_LONG).show();
+        	    Intent myIntent = new Intent(MainActivity.this, Webview.class);
+        	    startActivity(myIntent);
+        	    break;
+
+
+            case R.id.button2:
+        	    Toast.makeText(getApplicationContext(), "급식 엑티비티로 이동합니다.",
+        	        Toast.LENGTH_LONG).show();
+        	    Intent mIntent = new Intent(MainActivity.this, com.middleschool.sangha.bap.Bap.class);
+        	    startActivity(mIntent);
+        	    break;
+            }
         }
     };
 
