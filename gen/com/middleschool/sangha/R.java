@@ -1078,8 +1078,12 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
-        public static final int ic_notifi_icon=0x7f020058;
+        public static final int button=0x7f020057;
+        public static final int ic_launcher=0x7f020058;
+        public static final int ic_notifi_icon=0x7f020059;
+        public static final int introduce1=0x7f02005a;
+        public static final int sangha=0x7f02005b;
+        public static final int splash=0x7f02005c;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1093,7 +1097,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f05004e;
+        public static final int action_settings=0x7f050051;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int bapListLayout=0x7f05003d;
@@ -1117,6 +1121,7 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
+        public static final int imageView1=0x7f05004c;
         public static final int linearLayout1=0x7f050049;
         public static final int linearLayout2=0x7f050046;
         public static final int listMode=0x7f050001;
@@ -1128,6 +1133,7 @@ containing a value of this type.
         public static final int mMorning=0x7f050040;
         public static final int mNight=0x7f050042;
         public static final int middle=0x7f050012;
+        public static final int mymenu=0x7f050050;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
@@ -1150,16 +1156,17 @@ containing a value of this type.
         public static final int showTitle=0x7f050006;
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
-        public static final int sync=0x7f05004d;
+        public static final int sync=0x7f05004f;
         public static final int tabMode=0x7f050002;
         public static final int textView1=0x7f050043;
         public static final int textView2=0x7f050044;
         public static final int textView3=0x7f050045;
+        public static final int textView4=0x7f05004d;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
-        public static final int webView1=0x7f05004c;
+        public static final int webView1=0x7f05004e;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {
@@ -1215,13 +1222,17 @@ containing a value of this type.
         public static final int activity_bap=0x7f030018;
         public static final int bap_list_item=0x7f030019;
         public static final int main=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
-        public static final int webview=0x7f03001c;
+        public static final int my=0x7f03001b;
+        public static final int splash=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int webview=0x7f03001e;
     }
     public static final class menu {
         public static final int bap=0x7f0c0000;
         public static final int main=0x7f0c0001;
-        public static final int webview=0x7f0c0002;
+        public static final int my=0x7f0c0002;
+        public static final int splash=0x7f0c0003;
+        public static final int webview=0x7f0c0004;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1271,6 +1282,8 @@ containing a value of this type.
         public static final int shareBap_message_title=0x7f0a0013;
         public static final int shareBap_title=0x7f0a0012;
         public static final int title_activity_bap=0x7f0a0011;
+        public static final int title_activity_my=0x7f0a0016;
+        public static final int title_activity_splash=0x7f0a0015;
         public static final int title_activity_webview=0x7f0a0010;
     }
     public static final class style {

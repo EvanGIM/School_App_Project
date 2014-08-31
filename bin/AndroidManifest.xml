@@ -7,9 +7,8 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="16" />
-        
+
     <uses-permission android:name="android.permission.INTERNET" />
-    
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -27,24 +26,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.middleschool.sangha.Webview"
+            android:name=".Webview"
             android:label="@string/title_activity_webview"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="com.middleschool.sangha.bap.Bap"
+            android:name=".bap.Bap"
             android:label="@string/title_activity_bap" >
         </activity>
-        
-        <receiver android:name="com.middleschool.sangha.bapautoupdate.BroadCast" >
+
+        <receiver android:name=".bapautoupdate.BroadCast" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        
+
         <service
-            android:name="com.middleschool.sangha.bapautoupdate.updateService"
+            android:name=".bapautoupdate.updateService"
             android:label="자동 업데이트 서비스" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/title_activity_my" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.middleschool.sangha;
 
+import de.keyboardsurfer.android.widget.crouton.Style;
 import android.app.*;
 import android.os.*;
 import android.view.*;
@@ -15,6 +16,7 @@ import android.view.View.OnClickListener;
 import android.webkit.WebSettings;
 import android.widget.Button;
 import android.widget.EditText;
+import com.tistory.whdghks913.croutonhelper.CroutonHelper;
 
 public class Webview extends Activity
 {
@@ -25,7 +27,15 @@ public class Webview extends Activity
 	{
 		
         super.onCreate(savedInstanceState);
+        
+        CroutonHelper mHelper = new CroutonHelper(this);
+        
         setContentView(R.layout.webview);
+        
+		mHelper.setText("학교 홈페이지로 이동되었습니다.");
+        mHelper.setStyle(Style.CONFIRM);
+        mHelper.setDuration(3000);
+        mHelper.show();
 		
 		
 		webView = (WebView) this.findViewById(R.id.webView1);

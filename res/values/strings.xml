@@ -12,5 +12,7 @@
 \n\n아침 : %2$s
 \n\n점심 : %3$s
 \n\n저녁 : %4$s</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_my">개발자 정보</string>
 
 </resources>
