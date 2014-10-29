@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_section1">탭 1</string>
+    <string name="title_section2">탭 2</string>
+    <string name="title_section3">탭 3</string>
+
+</resources>
